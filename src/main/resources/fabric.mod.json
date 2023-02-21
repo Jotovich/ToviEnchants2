@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tovienchants",
+	"version": "${version}",
+	"name": "Tovi Enchants",
+	"description": "Custom Enchants mod focused around balancing for the vanilla game.",
+	"authors": [
+		"Tovi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tovienchants/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tovi.tovienchants.ToviEnchants"
+		],
+		"client": [
+			"tovi.tovienchants.ToviEnchantsClient"
+		],
+		"fabric-datagen": [
+			"tovi.tovienchants.ToviEnchantsDataGenerator"
+		]
+	},
+	"mixins": [
+		"tovienchants.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
